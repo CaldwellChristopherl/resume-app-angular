@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { UsersComponent } from './users/users.component';
 import { DetailsComponent } from './details/details.component';
 import { PostsComponent } from './posts/posts.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 const routes: Routes = [
   {
     path: '',
@@ -20,7 +20,9 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes),
+  BrowserAnimationsModule
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
