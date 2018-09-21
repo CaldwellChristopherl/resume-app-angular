@@ -10,6 +10,7 @@ import { PostsComponent } from './posts/posts.component';
 import { UsersComponent } from './users/users.component';
 import { DetailsComponent } from './details/details.component';
 import { MainNavigationComponent } from './main-navigation/main-navigation.component';
+import { MainResumeComponent } from './main-resume/main-resume.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MainNavigationComponent } from './main-navigation/main-navigation.compo
     PostsComponent,
     UsersComponent,
     DetailsComponent,
-    MainNavigationComponent
+    MainNavigationComponent,
+    MainResumeComponent
   ],
   imports: [
     BrowserModule,
