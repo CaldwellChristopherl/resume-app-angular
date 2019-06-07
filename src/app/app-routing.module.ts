@@ -1,11 +1,11 @@
 import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { UsersComponent } from './users/users.component';
-import { DetailsComponent } from './details/details.component';
 import { PostsComponent } from './posts/posts.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MainResumeComponent } from './main-resume/main-resume.component';
 import { MainNavigationComponent } from './main-navigation/main-navigation.component';
+import { LoginComponent } from './login/login.component';
 const routes: Routes = [
   {
     path: '',
@@ -13,7 +13,7 @@ const routes: Routes = [
   },
   {
     path: 'details/:id',
-    component: DetailsComponent
+    loadChildren: './details/details.component#DetailsComponent'
   },
   {
     path: 'posts',
@@ -22,6 +22,10 @@ const routes: Routes = [
   {
     path: ':id',
     component: MainResumeComponent
+  },
+  {
+    path: 'login',
+    component: LoginComponent
   }
 ];
 

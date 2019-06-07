@@ -11,6 +11,7 @@ import { UsersComponent } from './users/users.component';
 import { DetailsComponent } from './details/details.component';
 import { MainNavigationComponent } from './main-navigation/main-navigation.component';
 import { MainResumeComponent } from './main-resume/main-resume.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MainResumeComponent } from './main-resume/main-resume.component';
     UsersComponent,
     DetailsComponent,
     MainNavigationComponent,
-    MainResumeComponent
+    MainResumeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
